@@ -1,0 +1,1 @@
+This program will define the lifecycle of a react component
