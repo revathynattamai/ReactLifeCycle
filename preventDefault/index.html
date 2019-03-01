@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Prevent Default</title>
+</head>
+
+<body>
+    <a href="https://www.youtube.com/watch?v=3SNyh57XSIA" id="ytLink">Prevent Default</a>
+    <p>Enable:
+        <input type="checkbox" id="cb" />
+    </p>
+    <script type="text/javascript">
+        const ytLink = document.getElementById('ytLink');
+        const cb = document.getElementById('cb');
+        ytLink.addEventListener('click', e => {
+            if (!cb.checked) {
+                e.preventDefault();
+            }
+        })
+    </script>
+</body>
+
+</html>
